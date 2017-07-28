@@ -11,6 +11,9 @@ css and js behaviour.
 If you need a simple structure without using a framework and a bit more personal for little php project. You will find
 here a good starter kit.
 
+structure
+------------------------------------------------------------------------------------------------------------------------
+
   - src
     - _config     [ folder for manage the configuration parameter of the project ]
     - _includes   [ folder with the php classes for translator / Db / routing ]
@@ -23,3 +26,8 @@ here a good starter kit.
     - error.php
     - index.php
     - README.md
+
+------------------------------------------------------------------------------------------------------------------------
+Any contribution on this repository are welcome.
+
+Enjoy!
