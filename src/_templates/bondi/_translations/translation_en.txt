@@ -1,0 +1,11 @@
+Cart=Cart
+Home=Home
+Category1=Sub Home 1
+Category2=Sub Home 2
+Category3=Sub Home 3
+PromoBoxLabel1=Label Promo Box 1
+PromoBoxLabel2=Label Promo Box 2
+PromoBoxLabel3=Label Promo Box 3
+PromoBoxText1=Text Promo Box 1
+PromoBoxText2=Text Promo Box 2
+PromoBoxText3=Text Promo Box 3
