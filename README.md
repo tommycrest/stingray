@@ -1,4 +1,4 @@
-Stingray PHP
+# Stingray PHP
 
 Little structure for manage fast and reliable php project with Smarty as templating engine and bootstrap ( v3.3.7 ) as
 css and js behaviour.
@@ -11,7 +11,7 @@ css and js behaviour.
 If you need a simple structure without using a framework and a bit more personal for little php project. You will find
 here a good starter kit.
 
-structure
+# Structure
 ------------------------------------------------------------------------------------------------------------------------
 
   - src
