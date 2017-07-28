@@ -27,24 +27,9 @@
     }
 
     public function __($str) {
-      if (!array_key_exists($this->language, $this->lang)) {
         // -----------------------------------------------------------------------//
         // TODO: forcing a simple way to read xlsx file saved as blob inside dmbs //
         // -----------------------------------------------------------------------//
-        if (file_exists('/Applications/XAMPP/htdocs/project/stingray/src/_translations/translation_it.txt')) {
-              $strings = array_map(array($this,'splitStrings'),file('/Applications/XAMPP/htdocs/project/stingray/src/_translations/translation_it.txt'));
-              foreach ($strings as $k => $v) {
-                $this->lang[$this->language][$v[0]] = $v[1];
-              }
-              return $this->findString($str);
-          }
-          else {
-              echo $str;
-          }
-      }
-      else {
-          return $this->findString($str);
-      }
   }
 
 }

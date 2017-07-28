@@ -12,9 +12,6 @@
 		case '/':
 			include('pages/index.php');
 			break;
-		case 'subhome.php':
-			include('pages/subHomePage.php');
-			break;
 		case 'subhome':
 			include('pages/subHomePage.php');
 			break;

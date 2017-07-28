@@ -1,15 +1,4 @@
 # ##############################################################################
-# Basic Authentication for little security
-# ##############################################################################
-#AuthUserFile /Applications/XAMPP/htdocs/project/stingray/src/.htpasswd
-#AuthGroupFile /dev/null
-#AuthName "Basic Authentication on Platform"
-#AuthType Basic
-#<Limit GET POST>
-#require valid-user
-#</Limit>
-
-# ##############################################################################
 # Abilitiamo il Rewrite Mode ON
 # ##############################################################################
 RewriteEngine on
