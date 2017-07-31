@@ -9,22 +9,30 @@
    // Get the current working directory
    define('ABSOLUTE_PATH', getcwd());
 
-   define('INCLUDES_LAYER', ABSOLUTE_PATH.'/_includes/');
-   define('SMARTY_DIR', ABSOLUTE_PATH.'/_includes/smarty/');
+   //echo $_SERVER['DOCUMENT_ROOT'];
+   //echo realpath('_includes'); //usare realpath
+   //echo realpath('_includes/smarty');
+
+   define('INCLUDES_LAYER', realpath('_includes'));
+   define('SMARTY_DIR', realpath('_includes/smarty'));
    define('CSS_DIR', ABSOLUTE_PATH.'/_templates/default/_css/');
-   define('TRANSLATION_LAYER', ABSOLUTE_PATH.'/_translations/');
+   define('TRANSLATION_LAYER', realpath('_translations'));
    define('CONFIG_LAYER', realpath(dirname(__FILE__)));
+
+   //echo realpath('_includes/smarty').'/'.'Smarty.class.php';
 
    /**
     * Create the instance of the classes for the translation [ TBD ]
     */
-   require_once(INCLUDES_LAYER.'class.Translator.php');
+   //echo ABSOLUTE_PATH;
+   //echo INCLUDES_LAYER;
+   //require_once(INCLUDES_LAYER.'class.Translator.php');
 
-   if(isset($_GET['lang'])) {
+   /*if(isset($_GET['lang'])) {
   	 $translate = new Translator($_GET['lang']);
     } else {
 	   $translate = new Translator('en');
-   }
+   }*/
 
    /**
     * Switching the environment betweeen local env and production env

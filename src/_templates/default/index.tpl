@@ -27,10 +27,10 @@
       </div>
     </div>
   </nav -->
-  <div class="jumbotron">
+  <!-- div class="jumbotron">
 
-  </div>
-      <!-- bootstrap carousel -->
+  </div -->
+
   <div class="container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
@@ -124,6 +124,6 @@
       </div>
     </div>
   </div>
-  <!-- div -->
-
 </div>
+
+<!-- /div -->

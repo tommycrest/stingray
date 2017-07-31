@@ -1,11 +1,11 @@
 <?php require('_config/config.php'); ?>
 <!doctype html>
-<html ng-app="starterApp">
+<html>
 	<head>
 		<title>StingrayPHP</title>
 		<?php require('pages/partials/head.php'); ?>
 	</head>
-	<body>
+	<body ng-app="stingrayApp">
 		<div id="myAccount" class="modal fade" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -69,11 +69,11 @@
 	 * will take effect as a single page application.
 	 */
 	//include('pages/index.php');
-	include('_includes/routing.php');
+	//include('_includes/routing.php');
 
-	$route = getPageName(0);
+	//$route = getPageName(0);
 
-	switch($route) {
+	/*switch($route) {
 		case '/':
 			include('pages/index.php');
 			break;
@@ -82,11 +82,17 @@
 			break;
 		default:
 			include('pages/index.php');
-	}
+	}*/
 ?>
 <!-- Routing will be modify and updated with AngualrJS -->
-<!-- div ng-view="" id="ng-view"></div -->
+	<div class="contaier">
+		<div ng-view="" id="ng-view"></div>
+	</div>
+</div>
 <?php require('pages/partials/footer.php'); ?>
+<script src="_js/angular.min.js"></script>
+<script src="_js/angular-route.min.js"></script>
+<script src="_js/stingrayApp.js"></script>
 <script src="_js/stingray.js"></script>
 </body>
 </html>
