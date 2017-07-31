@@ -13,7 +13,7 @@
 	          <button type="button" class="close" data-dismiss="modal">&times;</button>
 	          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
         	</div>
-        <div class="modal-body" style="padding:40px 50px;">
+        <div class="modal-body">
           <form role="form" name="accountForm">
             <div class="form-group">
               <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
