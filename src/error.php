@@ -1,21 +1,4 @@
 <?php
-require('_config/config.php');
-?>
-<!doctype html>
-<html>
-  <head>
-    <title>Error reporting page</title>
-    <?php
-			require('pages/partials/head.php');
-		?>
-  </head>
-  <body>
-    <?php
-    require(SMARTY_DIR . 'Smarty.class.php');
-
-    $smarty = new Smarty;
-    $smarty->caching = true;
-    $smarty->cache_lifetime = 120;
 
     $text = 'Errore';
 
@@ -76,13 +59,24 @@ require('_config/config.php');
 
     header($protocol . ' ' . $prev_code . ' ' . $text);
 
-    //$GLOBALS['http_response_code'] = $prev_code;
-    $smarty->assign("paragraph", "StingrayPHP Framework");
-    $smarty->assign("errorCode", 'Error ' . $prev_code);
-    $smarty->assign("errorMsg", $text);
-    $smarty->assign("serverInfo", $_SERVER['HTTP_HOST']);
-    $smarty->assign("hostInfo", $_SERVER['HTTP_USER_AGENT']);
-    $smarty->display('_templates/error.tpl');
+    $errorCode = $prev_code
     ?>
-  </body>
-</html>
+    <div class="jumbotron">
+      <div class="emotion-window">
+        <p class="paragraph">
+          <?php echo $paragraph ?>&nbsp;&reg;
+        </p>
+      </div>
+    </div>
+    <div class="information">
+      <div class="errorcode">
+        <p class="paragraph title"><?php echo $errorCode ?></p>
+      </div>
+      <div class="errormessage">
+        <p class="paragraph message"><?php echo $text ?></p>
+      </div>
+    </div>
+    <hr/>
+    <div class="container">
+      <p class="paragraph infoserver"><?php echo $_SERVER['HTTP_HOST'] ?> &nbsp; <?php echo $_SERVER['HTTP_USER_AGENT'] ?></p>
+    </div>

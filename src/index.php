@@ -51,7 +51,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar" aria-expanded="true">
 					<ul class="nav navbar-nav">
-								<li><a href="#">Subhome 1</a></li>
+								<li><a href="/#!/pallone">Subhome 1</a></li>
 								<li><a href="#">Subhome 2</a></li>
 								<li><a href="#">Subhome 3</a></li>
 					</ul>

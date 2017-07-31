@@ -2,9 +2,8 @@
 require('../_config/config.php');
 ?>
 <?php
-		//require(SMARTY_DIR . 'Smarty.class.php');
-		//require(realpath('smarty/Smarty.class.php'));
-		//$smarty = new Smarty;
+		require('/Applications/XAMPP/htdocs/project/stingray/src/_includes/smarty/Smarty.class.php');
+		$smarty = new Smarty;
 
 		// --------------------------------------------------------- //
 		// Backup code for smarty template language									 //
@@ -25,12 +24,12 @@ require('../_config/config.php');
 		// Backup code for smarty template language									 //
 		// --------------------------------------------------------- //
 
-		/*$smarty->assign("paragraph", "StingrayPHP Framework");
-		$smarty->assign("header", "Header della pagina index");
-		$smarty->assign("panelOneText","Testo on the first panel");
-		$smarty->assign("panelSecondText","Testo on the second panel");
-		$smarty->assign("panelThirdText","Testo on the third panel");
-*/
+		// $smarty->assign("paragraph", "StingrayPHP Framework");
+		// $smarty->assign("header", "Header della pagina index");
+		// $smarty->assign("panelOneText","Testo on the first panel");
+		// $smarty->assign("panelSecondText","Testo on the second panel");
+		// $smarty->assign("panelThirdText","Testo on the third panel");
+
 		//$smarty->display('_templates/'.THEME.'/index.tpl');
 		include('../_templates/'.THEME.'/index.tpl');
 ?>

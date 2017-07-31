@@ -1,33 +1,5 @@
 
-
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Logo</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar" aria-expanded="true">
-        <ul class="nav navbar-nav">
-          {foreach item=listItem from=$navigation}
-            {if $listItem eq "home"}
-                <li class="active"><a href="#">{$listItem}</a></li>
-            {else}
-              <li><a href="#">{$listItem}</a></li>
-            {/if}
-          {/foreach}
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-          <li><a href="#"><span class= "{$glyphicon} {$glyphicon}-{$shopping}-{$cart}"></span>{$cartlabel}</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="jumbotron">
+ <div class="jumbotron">
 
   </div>
       <!-- bootstrap carousel -->
@@ -65,7 +37,7 @@
 
   <!-- Begin Text Paragraph 3 / 3 -->
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-8 paragraphTwoThird">{$paragraphTwoThird}</div>
+    <div class="col-xs-12 col-sm-6 col-md-8 paragraphTwoThird">parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole </div>
     <div class="col-xs-12 col-md-4">
       <div class="panel panel-primary">
         <!--div class="panel-heading">BLACK FRIDAY DEAL</div -->

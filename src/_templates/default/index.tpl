@@ -1,36 +1,3 @@
-
-
-      <!--nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Logo</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar" aria-expanded="true">
-        <ul class="nav navbar-nav">
-          {foreach item=listItem from=$navigation}
-            {if $listItem eq "home"}
-                <li class="active"><a href="#">{$listItem}</a></li>
-            {else}
-              <li><a href="#">{$listItem}</a></li>
-            {/if}
-          {/foreach}
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="myAccount"><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-          <li><a href="#"><span class= "{$glyphicon} {$glyphicon}-{$shopping}-{$cart}"></span>{$cartlabel}</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav -->
-  <!-- div class="jumbotron">
-
-  </div -->
-
   <div class="container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
@@ -104,7 +71,7 @@
       <div class="panel panel-primary">
         <!--div class="panel-heading">BLACK FRIDAY DEAL</div -->
         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">{$panelOneText}</div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
 
@@ -112,7 +79,7 @@
       <div class="panel panel-primary">
         <!--div class="panel-heading">BLACK FRIDAY DEAL</div -->
         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">{$panelSecondText}</div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
 
@@ -120,7 +87,7 @@
       <div class="panel panel-primary last-promo">
         <!--div class="panel-heading">BLACK FRIDAY DEAL</div -->
         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">{$panelThirdText}</div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
   </div>
