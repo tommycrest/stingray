@@ -2,7 +2,7 @@
  * stingray.css : basic style del nostro framework bootstrap based
  */
 .jumbotron, .container-fluid .jumbotron {
-  background-color: red;
+  background-color: #C7F439;
   border-radius: 0px;
   color: white;
   margin-top: 50px;
@@ -14,18 +14,18 @@
   color: white;
 }
 .navbar-inverse {
-  background-color: red;
+  background-color: #C7F439;
   color:white;
-  border: 1px solid #7C0000;
+  border: 1px solid #C7F439;
 }
 .navbar-inverse .navbar-brand {
-  color: white;
+  color: black;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: white;
+  color: black;
 }
 .navbar-inverse .navbar-nav > li > a:hover {
-  color: #7C0000;
+  color: white;
 }
 .navbar-inverse .navbar-nav >
   .active > a,
@@ -33,7 +33,7 @@
   .active > a:focus, .navbar-inverse
   .navbar-nav > .active > a:hover {
   color: white;
-  background-color: #7C0000;
+  background-color: #C7F439;
 }
 .carousel {
   margin-bottom: 20px;
@@ -56,7 +56,7 @@
 .panel-primary {
   border-radius: 0px;
   border: 0px;
-  border: 1px solid #7C0000;
+  border: 1px solid #C7F439;
   margin-right: 5px;
   margin-left: 5px;
 }
@@ -67,7 +67,7 @@
 .last-promo {
   border-radius: 0px;
   border: 0px;
-  border: 1px solid #7C0000;
+  border: 1px solid #C7F439;
   margin-right: 5px;
   margin-left: 0px;
 }

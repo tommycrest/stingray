@@ -6,6 +6,9 @@
  */
  (function(){
 
-   // Code for your application javascript
+   // Modal version for your account login / creation
+   $('.myAccount').click(function(){
+     $('#myAccount').modal();
+   });
 
  })();
