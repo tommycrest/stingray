@@ -1,6 +1,6 @@
 <?php require('_config/config.php'); ?>
 <!doctype html>
-<html ng-app>
+<html ng-app="starterApp">
 	<head>
 		<title>StingrayPHP</title>
 		<?php require('pages/partials/head.php'); ?>
@@ -57,7 +57,7 @@
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="myAccount"><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-						<li><a href="#"><span class= "{$glyphicon} {$glyphicon}-{$shopping}-{$cart}"></span>Cart</a></li>
+						<li><a href="#"><span class= "glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
 					</ul>
 				</div>
 			</div>
