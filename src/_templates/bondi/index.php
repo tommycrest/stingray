@@ -1,31 +1,8 @@
 
 
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">Logo</a>
-        <!-- div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Logo</a>
-        </div -->
-        <!-- div class="collapse navbar-collapse" id="myNavbar" aria-expanded="true">
-        <ul class="nav navbar-nav">
-          {foreach item=listItem from=$navigation}
-            {if $listItem eq "home"}
-                <li class="active"><a href="#">{$listItem}</a></li>
-            {else}
-              <li><a href="#">{$listItem}</a></li>
-            {/if}
-          {/foreach}
-        </ul>
-        <ul class="nav navbar-nav navbar-right" -->
-          <!-- li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li -->
-          <!-- li><a href="#"><span class= "{$glyphicon} {$glyphicon}-{$shopping}-{$cart}"></span>{$cartlabel}</a></li -->
-        <!-- /ul -->
-      <!-- /div -->
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Logo</a>
     </div>
   </nav>
   <div class="jumbotron">

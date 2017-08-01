@@ -10,7 +10,7 @@
    define('ABSOLUTE_PATH', getcwd());
 
    define('INCLUDES_LAYER', realpath('_includes'));
-   define('SMARTY_DIR', realpath('_includes/smarty'));
+   define('SMARTY_DIR', realpath('smarty'));
    define('CSS_DIR', ABSOLUTE_PATH.'/_templates/default/_css/');
    define('TRANSLATION_LAYER', realpath('_translations'));
    define('CONFIG_LAYER', realpath(dirname(__FILE__)));

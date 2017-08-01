@@ -63,31 +63,10 @@
 			</div>
 		</nav>
 		<!-- End 	Navigation Bar 	-->
-<?php
-	/**
-	 * index.php : all my call will be on this index so all the business routing logic
-	 * will take effect as a single page application.
-	 */
-	//include('pages/index.php');
-	//include('_includes/routing.php');
-
-	//$route = getPageName(0);
-
-	/*switch($route) {
-		case '/':
-			include('pages/index.php');
-			break;
-		case 'subhome':
-			include('pages/subHomePage.php');
-			break;
-		default:
-			include('pages/index.php');
-	}*/
-?>
-<!-- Routing will be modify and updated with AngualrJS -->
-	<div class="contaier">
-		<div ng-view="" id="ng-view"></div>
-	</div>
+		<!-- Routing will be modify and updated with AngualrJS -->
+		<div class="contaier">
+			<div ng-view="" id="ng-view"></div>
+		</div>
 </div>
 <?php require('pages/partials/footer.php'); ?>
 <script src="_js/angular.min.js"></script>
