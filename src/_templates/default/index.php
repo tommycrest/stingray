@@ -1,4 +1,4 @@
-  <div class="container">
+  <div class="container" ng-controller="HomeCtrl">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
     <ol class="carousel-indicators">
@@ -33,15 +33,13 @@
   <div class="row">
     <div class="col-xs-12 col-sm-4">
       <div class="panel panel-primary">
-        <!--div class="panel-heading">BLACK FRIDAY DEAL</div -->
         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+        <div class="panel-footer">{{$scope.translatedword}}</div>
       </div>
     </div>
 
     <div class="col-xs-12 col-sm-4">
       <div class="panel panel-primary">
-        <!--div class="panel-heading">BLACK FRIDAY DEAL</div -->
         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
@@ -49,7 +47,6 @@
 
     <div class="col-xs-12 col-sm-4">
       <div class="panel panel-primary last-promo">
-        <!--div class="panel-heading">BLACK FRIDAY DEAL</div -->
         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
@@ -69,7 +66,6 @@
   <div class="row">
     <div class="col-xs-12 col-sm-4">
       <div class="panel panel-primary">
-        <!--div class="panel-heading">BLACK FRIDAY DEAL</div -->
         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
@@ -77,7 +73,6 @@
 
     <div class="col-xs-12 col-sm-4">
       <div class="panel panel-primary">
-        <!--div class="panel-heading">BLACK FRIDAY DEAL</div -->
         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
@@ -85,7 +80,6 @@
 
     <div class="col-xs-12 col-sm-4">
       <div class="panel panel-primary last-promo">
-        <!--div class="panel-heading">BLACK FRIDAY DEAL</div -->
         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
