@@ -7,14 +7,19 @@ var stringrayApp = angular.module('stingrayApp', ['ngRoute']);
 
 stringrayApp.controller('HomeCtrl', function() {
 
-}).controller('SubHomeCtrl', function( $location ) {
-  console.log($location);
-  $window.location.href = '/';
+});
+
+stringrayApp.controller('SubHomeCtrl', function( $location ) {
+
 });
 
 stringrayApp.controller('ErrorCtrl', function() {
 
 });
+
+stringrayApp.factory('translations', [ '$http', function($http){
+  
+}]);
 
 stringrayApp.config(['$routeProvider', function($routeProvider){
  $routeProvider.when('/', {
