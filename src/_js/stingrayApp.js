@@ -8,8 +8,10 @@ var stringrayApp = angular.module('stingrayApp', ['ngRoute']);
 stringrayApp.factory('translations', [ '$http', function($http){
   var LOCAL_DB = 'http://localhost:3000';
   var obj = {};
+  var data = {};
   obj.getItalianTranslation = function() {
-    return $http.get(LOCAL_DB+'/it');
+     data = $http.get(LOCAL_DB+'/it');
+     return data;
   }
   return obj;
 }]);
@@ -18,21 +20,6 @@ stringrayApp.controller('HomeCtrl', ['translations', '$scope', function( transla
 
    $scope.translatedword = {};
 
-    translations.getItalianTranslation().then(function(translated){
-        console.log(translated.data);
-        $scope.translatedword = translated.data;
-        console.log($scope.translatedword);
-    });
-
-    getdata = function() {
-      return $scope.translatedword;
-    }
-
-    var obj = {name: 'misko', gender: 'male'};
-    var log = [];
-    angular.forEach(obj, function(value, key) {
-      console.log(key + ': ' + value);
-    });
 }]);
 
 stringrayApp.controller('SubHomeCtrl', function( $location ) {
