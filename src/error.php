@@ -60,23 +60,7 @@
     header($protocol . ' ' . $prev_code . ' ' . $text);
 
     $errorCode = $prev_code
-    ?>
-    <div class="jumbotron">
-      <div class="emotion-window">
-        <p class="paragraph">
-          <?php echo $paragraph ?>&nbsp;&reg;
-        </p>
-      </div>
-    </div>
-    <div class="information">
-      <div class="errorcode">
-        <p class="paragraph title"><?php echo $errorCode ?></p>
-      </div>
-      <div class="errormessage">
-        <p class="paragraph message"><?php echo $text ?></p>
-      </div>
-    </div>
-    <hr/>
-    <div class="container">
-      <p class="paragraph infoserver"><?php echo $_SERVER['HTTP_HOST'] ?> &nbsp; <?php echo $_SERVER['HTTP_USER_AGENT'] ?></p>
-    </div>
+
+    include('_templates/error.php');
+
+?>
