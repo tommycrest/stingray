@@ -16,4 +16,6 @@
     */
   define('THEME', 'default');
   define('ENCODING', 'UTF-8');
+
+  define('ENDPOINT', '//stingray.localhost/_templates/'.THEME);
  ?>

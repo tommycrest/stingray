@@ -31,28 +31,13 @@
   <!-- Preview container -->
   <!-- div class="container" -->
   <div class="row">
-    <div class="col-xs-12 col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">{{$scope.translatedword}}</div>
-      </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-4">
-      <div class="panel panel-primary last-promo">
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+    <div class="col-xs-12 col-sm-4"  ng-repeat="homepromobox in homepromoboxs">
+      <div class="panel panel-primary" ng-if="$index <=2">
+        <div class="panel-body"><img src=<?echo ENDPOINT?>{{homepromobox.image}} class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">{{homepromobox.label}}</div>
       </div>
     </div>
   </div>
-  <!-- div -->
 
   <!-- Begin Text Paragraph 3 / 3 -->
   <div class="row">
@@ -64,24 +49,10 @@
   <!-- Preview container -->
   <!-- div class="container" -->
   <div class="row">
-    <div class="col-xs-12 col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-4">
-      <div class="panel panel-primary last-promo">
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+    <div class="col-xs-12 col-sm-4"  ng-repeat="homepromobox in homepromoboxs">
+      <div class="panel panel-primary" ng-if="$index >2">
+        <div class="panel-body"><img src=<?echo ENDPOINT?>{{homepromobox.image}} class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">{{homepromobox.label}}</div>
       </div>
     </div>
   </div>
