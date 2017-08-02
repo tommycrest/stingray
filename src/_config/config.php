@@ -39,4 +39,5 @@
     * Connection to choose dbms with the instance of the classes Db (class.Db.php)
     */
     //require_once(INCLUDES_LAYER. 'class.Db.php');
+  
 ?>

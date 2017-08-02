@@ -31,9 +31,13 @@ stringrayApp.controller('HomeCtrl', ['translations', '$scope', function( transla
     {id : "5" ,label : "Label and ready text 5", image: "/imgs/samsung_150x80.jpg"}];
 }]);
 
-stringrayApp.controller('SubHomeCtrl', function( $location ) {
+stringrayApp.controller('SubHomeCtrl', ['$scope', function( $scope ) {
+  $scope.subhomepromoboxs = {id : "0" ,label : "Label lateral box 0", image: "/imgs/logoAndroid.png"};
 
-});
+  $scope.paragraphTwoThird = {id: "0", content : "parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole"};
+
+  $scope.paragraphFullWidth = {id: "0", content : "wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww "};
+}]);
 
 stringrayApp.controller('ErrorCtrl', function() {
 

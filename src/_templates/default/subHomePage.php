@@ -3,7 +3,7 @@
 
   </div>
       <!-- bootstrap carousel -->
-  <div class="container">
+  <div class="container" ng-controller="SubHomeCtrl">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
     <ol class="carousel-indicators">
@@ -37,19 +37,19 @@
 
   <!-- Begin Text Paragraph 3 / 3 -->
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-8 paragraphTwoThird">parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole </div>
+    <div class="col-xs-12 col-sm-6 col-md-8 paragraphTwoThird">{{paragraphTwoThird.content}}</div>
     <div class="col-xs-12 col-md-4">
       <div class="panel panel-primary">
         <!--div class="panel-heading">BLACK FRIDAY DEAL</div -->
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Lateral Promo Box</div>
+        <div class="panel-body"><img src=<?echo ENDPOINT?>{{subhomepromoboxs.image}} class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">{{subhomepromoboxs.label}}</div>
       </div>
     </div>
   </div>
   <!-- End Text Paragraph         -->
   <div class="row">
     <div class="col-xs-12">
-    parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole
+    {{paragraphFullWidth.content}}
     </div>
   </div>
 </div>
