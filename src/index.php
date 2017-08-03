@@ -72,6 +72,7 @@
 <script src="_js/angular.min.js"></script>
 <script src="_js/angular-route.min.js"></script>
 <script src="_js/stingrayApp.js"></script>
+<script src="_js/stingrayService.js"></script>
 <script src="_js/stingray.js"></script>
 </body>
 </html>

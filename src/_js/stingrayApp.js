@@ -8,7 +8,7 @@ var stringrayApp = angular.module('stingrayApp', ['ngRoute']);
 // LoginCtrl : Controller for login operation on the system
 stringrayApp.controller('LoginCtrl', ['$scope', function( $scope ) { }]);
 
-stringrayApp.controller('HomeCtrl', [ '$scope', function( $scope ) {
+stringrayApp.controller('HomeCtrl', ['translations', '$scope', function( translations, $scope ) {
   $scope.homepromoboxs = [
     {id : "0" ,label : "Label and ready text 0", image: "/imgs/logoAndroid.png"},
     {id : "1" ,label : "Label and ready text 1", image: "/imgs/logoAndroid.png"},
@@ -16,6 +16,15 @@ stringrayApp.controller('HomeCtrl', [ '$scope', function( $scope ) {
     {id : "3" ,label : "Label and ready text 3", image: "/imgs/samsung_150x80.jpg"},
     {id : "4" ,label : "Label and ready text 4", image: "/imgs/samsung_150x80.jpg"},
     {id : "5" ,label : "Label and ready text 5", image: "/imgs/samsung_150x80.jpg"}];
+
+    $scope.getTranslation = function() {
+      $scope.content = translations.getItalianTranslation();
+      console.log($scope.content);
+    }
+
+    $scope.getTranslation();
+
+
 }]);
 
 // SubHomeCtrl : controller to manage all the subhome page except home page

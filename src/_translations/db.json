@@ -1,30 +1,10 @@
 {
   "it" : [
-    { "key": "0", "value" : "Home IT" },
-    { "key": "1", "value" : "Cart" },
-    { "key": "2", "value" : "Livello 1" },
-    { "key": "3", "value" : "Livello 2" },
-    { "key": "4", "value" : "livello 3" },
-    { "key": "5", "value" : "Account" },
-    { "key": "6", "value" : "Label Promo Box 1"},
-    { "key": "7", "value" : "Label Promo Box 2"},
-    { "key": "8", "value" : "Label Promo Box 3"},
-    { "key": "9", "value" : "Text Promo Box 1"},
-    { "key": "10", "value" : "Text Promo Box 2"},
-    { "key": "11", "value" : "Text Promo Box 3"}
-  ],
-  "en" : [
-    { "key": "Home", "value" : "Home EN" },
-    { "key": "Cartlabel", "value" : "Cart" },
-    { "key": "Subhomelabel1", "value" : "Livello 1" },
-    { "key": "Subhomelabel2", "value" : "Livello 2" },
-    { "key": "Subhomelabel3", "value" : "livello 3" },
-    { "key": "Accountlabel", "value" : "Account" },
-    { "key": "PromoBoxLabel1", "value" : "Label Promo Box 1"},
-    { "key": "PromoBoxLabel2", "value" : "Label Promo Box 2"},
-    { "key": "PromoBoxLabel3", "value" : "Label Promo Box 3"},
-    { "key": "PromoBoxText1", "value" : "Text Promo Box 1"},
-    { "key": "PromoBoxText2", "value" : "Text Promo Box 2"},
-    { "key": "PromoBoxText3", "value" : "Text Promo Box 3"}
+    { "key": "logoHome", "value" : "Home IT" },
+    { "key": "labelCart", "value" : "Cart" },
+    { "key": "subhome1", "value" : "Livello 1" },
+    { "key": "subhome2", "value" : "Livello 2" },
+    { "key": "subhome3", "value" : "livello 3" },
+    { "key": "labelAccount", "value" : "Account" }
   ]
 }
