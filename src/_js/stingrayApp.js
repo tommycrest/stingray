@@ -5,23 +5,10 @@
 
 var stringrayApp = angular.module('stingrayApp', ['ngRoute']);
 
-// This factory must be reconsidered because actually doesn't work correctly
-// TODO: linking to a databse nosql ( json ) that permit to recover all data
-// and put them on the UI.
-stringrayApp.factory('translations', [ '$http', function($http){
-  var obj = {};
-  return obj;
-  /*var LOCAL_DB = 'http://localhost:3000';
-  var obj = {};
-  var data = {};
-  obj.getItalianTranslation = function() {
-     data = $http.get(LOCAL_DB+'/it');
-     return data;
-  }
-  return obj;*/
-}]);
+// LoginCtrl : Controller for login operation on the system
+stringrayApp.controller('LoginCtrl', ['$scope', function( $scope ) { }]);
 
-stringrayApp.controller('HomeCtrl', ['translations', '$scope', function( translations, $scope ) {
+stringrayApp.controller('HomeCtrl', [ '$scope', function( $scope ) {
   $scope.homepromoboxs = [
     {id : "0" ,label : "Label and ready text 0", image: "/imgs/logoAndroid.png"},
     {id : "1" ,label : "Label and ready text 1", image: "/imgs/logoAndroid.png"},
@@ -31,28 +18,27 @@ stringrayApp.controller('HomeCtrl', ['translations', '$scope', function( transla
     {id : "5" ,label : "Label and ready text 5", image: "/imgs/samsung_150x80.jpg"}];
 }]);
 
+// SubHomeCtrl : controller to manage all the subhome page except home page
 stringrayApp.controller('SubHomeCtrl', ['$scope', function( $scope ) {
   $scope.subhomepromoboxs = {id : "0" ,label : "Label lateral box 0", image: "/imgs/logoAndroid.png"};
-
-  $scope.paragraphTwoThird = {id: "0", content : "parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole parole"};
-
-  $scope.paragraphFullWidth = {id: "0", content : "wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww wwwwww wwwwww wwwwww wwwwwww "};
+  $scope.paragraphTwoThird = {id: "0", content : "Content on the page at 2/3 completely text"};
+  $scope.paragraphFullWidth = {id: "0", content : "Content on the page at full width completely text"};
 }]);
 
-stringrayApp.controller('ErrorCtrl', function() {
+// ErrorCtrl : controller for manage the error on the platform
+stringrayApp.controller('ErrorCtrl', function() {});
 
-});
-
+// Routing configuration for the application
 stringrayApp.config(['$routeProvider', function($routeProvider){
  $routeProvider.when('/', {
    title: 'titolo',
    templateUrl: 'pages/index.php',
    controller: 'HomeCtrl'
- }).when('/pallone',{
+ }).when('/subhome',{
    title: 'titolo',
    templateUrl: 'pages/subHomePage.php',
    controller: 'SubHomeCtrl'
  }).otherwise({
-   redirectTo: '/',
+   redirectTo: '/'
   });
 }]);

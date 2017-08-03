@@ -1,12 +1,16 @@
 /**
- * stingrayService : definintion of the services for the platform
+ * stingrayService : services definition of the platform for recover the data from the database
  */
-
-// This service must be reconsidered because actually doesn't work correctly
-// TODO: linking to a databse nosql ( json ) that permit to recover all data
-// and put them on the UI.
 stringrayApp.service('translations', [ '$http', function($http){
   var obj = {};
+  /*var LOCAL_DB = 'http://localhost:3000';
+  var obj = {};
+  var data = {};
+  obj.getItalianTranslation = function() {
+     data = $http.get(LOCAL_DB+'/it');
+     return data;
+  }
+  return obj;*/
   return obj;
 
 }]);
