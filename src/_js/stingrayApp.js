@@ -22,7 +22,7 @@ stringrayApp.controller('HomeCtrl', ['translations', '$scope', function( transla
       console.log($scope.content);
     }
 
-    $scope.getTranslation();
+    //$scope.getTranslation();
 
 
 }]);
@@ -47,6 +47,7 @@ stringrayApp.config(['$routeProvider', function($routeProvider){
    title: 'titolo',
    templateUrl: 'pages/subHomePage.php',
    controller: 'SubHomeCtrl'
+ }).when('myCarousel', {
  }).otherwise({
    redirectTo: '/'
   });
